@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+@font-face {
+  font-family: Rachel;
+  src: url(../src/assets/Rachel/Rachel\ Roman.ttf);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #FFFAEA;
+  color: #192528;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Rachel';
+}
+
+h1 {
+  font-size: 70px;
+  color: #FFFAEA;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5,
+h6 {
+  font-family: 'Jost';
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 15px;
+}
+
+p {
+  font-family: 'Jost';
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.topnav>.logo,
+.topnav nav,
+.topnav .cta {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.topnav nav li {
+  font-family: 'Jost';
+  font-size: 20px;
+}
+
+.topnav nav li:hover {
+  border-bottom: 2px dashed #192528;
+}
+
+.topnav button {
+  width: 130px;
+  height: 45px;
+  background-color: #0D00FF;
+  border-radius: 10px;
+  border: none;
+  color: #FFFAEA;
+  font-family: 'Rachel';
+  font-size: 20px;
+}
+
+.topnav button:hover {
+  border: 2px dashed #0D00FF;
+  color: #0D00FF;
+  background-color: #FFFAEA;
+}
+
+.home-container {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  width: 95vw;
+  height: 70vh;
+  padding: 40px;
+  border: 2px dashed #FFFAEA;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-content p {
+  width: 50vw;
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFAEA;
+}
+
+.services-container {
+  padding: 30px;
+}
+
+.about,
+.contact,
+.booking,
+.location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.about-box,
+.contact-box,
+.booking-box,
+.location-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px dashed #FFFAEA;
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.services-box {
+  border: 2px dashed #731113;
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.about-box p,
+.contact-box p,
+.services-box p,
+.booking-box p,
+.location-box p {
+  font-size: 20px;
+}
+
+.about-box,
+.contact-box,
+.location-box {
+  color: #FFFAEA;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+}
+
+.about-column,
+.services-column,
+.location-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-column div,
+.services-column div,
+.location-column div {
+  flex-grow: 1;
+}
+
+.faq-box,
+.testimonial-box,
+.map-box,
+.hours-box,
+.enquiry-box {
+  background-color: #FFFAEA;
+  padding: 2rem;
+  border-radius: 50px;
+  color: #192528;
+}
+
+.faq-box {
+  height: 700px;
+  overflow: scroll;
+}
+
+.testimonial-box {
+  height: 350px;
+  overflow: scroll;
+}
+
+.faq-box .accordion-button {
+  border-bottom: 2px dashed #192528;
+  background-color: #FFFAEA;
+}
+
+.accordion {
+  --bs-accordion-border-color: none;
+  --bs-accordion-bg: none;
+  --bs-accordion-border-radius: none;
+}
+
+.services-box p,
+.faq-box p,
+.testimonial-box p,
+.map-box p,
+.hours-box p,
+.enquiry-box p {
+  font-size: 15px;
+}
+
+.services-header {
+  display: flex;
+  align-items: center;
+}
+
+.services-header h2 {
+  margin-right: 15px;
+}
+
+.services-box button {
+  border: none;
+  font-family: 'Rachel';
+  font-size: 15px;
+  color: #0D00FF;
+  background: none;
+  padding: 0;
+}
+
+.services-box button:hover {
+  border-bottom: 2px dashed #0D00FF;
+}
+
+.carousel-indicators {
+  position: unset !important;
+}
+
+.contact-form button {
+  border: none;
+  font-family: 'Rachel';
+  font-size: 20px;
+  color: #0D00FF;
+  background: none;
+  padding: 0;
+}
+
+.contact-form button:hover {
+  border-bottom: 2px dashed #0D00FF;
+}
+
+.booking {
+  background: #192528;
+}
+
+.booking .booking-box {
+  color: #FFFAEA;
+}
+
+.booking .booking-form {
+  background-color: #FFFAEA;
+  color: #192528;
+  border-radius: 50px;
+  padding: 2rem;
+}
+
+.booking-form button {
+  width: 130px;
+  height: 45px;
+  background-color: #0D00FF;
+  border-radius: 10px;
+  border: none;
+  color: #FFFAEA;
+  font-family: 'Rachel';
+  font-size: 20px;
+}
+
+.booking-form button:hover {
+  border: 2px dashed #0D00FF;
+  color: #0D00FF;
+  background-color: #FFFAEA;
+}
+
+form label {
+  font-family: 'Jost';
+  font-size: 15px;
+  font-weight: 700;
+  width: 100px;
+}
+
+form {
+  display: grid;
+  row-gap: 10px;
+}
+
+form input,
+form select,
+form textarea {
+  border: 1px solid #192528;
+  background-color: #FFFAEA;
+  border-radius: 5px;
+}
+
+.mySwiper {
+  /* margin-left: 2rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.swiper-slide {
+  max-width: 663px !important;
+  width: fit-content !important;
+  margin-right: 1.5rem;
+}
+
+.swiper-pagination {
+  position: unset !important;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #731113;
+  color: #FFFAEA;
+  height: 10vh;
+  padding: 20px;
+  font-family: 'Jost';
+  font-size: 20px;
+}
+
+.footer .footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  align-items: center;
+}
