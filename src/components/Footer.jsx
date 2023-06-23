@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer-logo'>©2023
-        <img src="./src/assets/sue's-light-logo.png" alt=""
+        <img src="./assets/sue's-light-logo.png" alt=""
           style={{
             width: '50px',
             marginLeft: '10px',

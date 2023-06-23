@@ -5,7 +5,7 @@ const Header = () => {
         <div className="topnav">
             <div className="logo">
                 <Link to='/'>
-                    <img src="../assets/sue's-logo.png" alt=""
+                    <img src="./assets/sue's-logo.png" alt=""
                         style={{
                             width: '218px',
                             marginLeft: '20px',
