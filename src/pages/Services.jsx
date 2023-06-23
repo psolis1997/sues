@@ -72,7 +72,7 @@ const Services = () => {
 
             {/* dry cleaning */}
             <div className='services-box'>
-              <h3>bridal alterations</h3>
+              <h3>dry cleaning</h3>
 
               <p>
                 Visit our store for all your dry cleaning needs. Our dry cleaner specialises in cleaning bridal gowns, formal dresses, suits, corporate uniforms, business shirts, coats and jackets.
