@@ -381,3 +381,43 @@ form textarea {
   column-gap: 30px;
   align-items: center;
 }
+
+#menu-container, .mobileMenu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+  .topnav {
+    display: none;
+  }
+
+  #menu-container {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: block;
+    width: 100%;
+    background-color: #192528;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .mobileMenu a {
+    font-family: 'Jost';
+      color: #FFFAEA;
+      text-decoration: none;
+      font-size: 30px;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  #hamburger-icon {
+    font-size: 33px;
+    position: relative;
+    top: 2px;
+  }
+
+}

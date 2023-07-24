@@ -2,6 +2,7 @@ import React from "react"
 import ContactForm from "../components/ContactForm"
 import background from '../assets/background.png'
 
+
 const Contact = () => {
   return (
     <div className='contact'
@@ -21,7 +22,7 @@ const Contact = () => {
             Email: info@suesrepairs.co.nz
           </p>
           <p>
-            Social: logo logo
+            Social: logo
           </p>
         </div>
       </div>
